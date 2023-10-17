@@ -1,0 +1,68 @@
+[13-Oct-23 01:19:27 - WARNING] - WinxMusic.core.mongo - No MONGO DB URL found.. Your Bot will work on Winx's Database
+[13-Oct-23 01:23:16 - WARNING] - WinxMusic.core.mongo - No MONGO DB URL found.. Your Bot will work on Winx's Database
+[13-Oct-23 01:25:25 - WARNING] - WinxMusic.core.mongo - No MONGO DB URL found.. Your Bot will work on Winx's Database
+[13-Oct-23 12:02:45 - WARNING] - WinxMusic.core.mongo - No MONGO DB URL found.. Your Bot will work on Winx's Database
+[13-Oct-23 12:25:13 - WARNING] - WinxMusic.core.mongo - No MONGO DB URL found.. Your Bot will work on Winx's Database
+[13-Oct-23 12:40:34 - WARNING] - WinxMusic.core.mongo - No MONGO DB URL found.. Your Bot will work on Winx's Database
+[15-Oct-23 23:20:21 - WARNING] - WinxMusic.core.mongo - No MONGO DB URL found.. Your Bot will work on Winx's Database
+[15-Oct-23 23:21:31 - INFO] - WinxMusic.core.dir - Directories Updated.
+[15-Oct-23 23:21:31 - INFO] - WinxMusic.core.git - Git Client Found [VPS DEPLOYER]
+[15-Oct-23 23:21:31 - INFO] - WinxMusic.misc - Database Initialized.
+[15-Oct-23 23:21:31 - INFO] - WinxMusic.misc - Sudoers Loaded.
+[15-Oct-23 23:21:31 - INFO] - WinxMusic.core.bot - Starting Bot
+[15-Oct-23 23:21:39 - ERROR] - WinxMusic - No Assistant Clients Vars Defined!.. Exiting Process.
+[15-Oct-23 23:21:39 - INFO] - WinxMusic - Stopping Winx Music Bot! GoodBye
+[16-Oct-23 09:10:52 - WARNING] - WinxMusic.core.mongo - No MONGO DB URL found.. Your Bot will work on Winx's Database
+[16-Oct-23 09:10:59 - INFO] - WinxMusic.core.dir - Directories Updated.
+[16-Oct-23 09:10:59 - INFO] - WinxMusic.core.git - Git Client Found [VPS DEPLOYER]
+[16-Oct-23 09:10:59 - INFO] - WinxMusic.misc - Database Initialized.
+[16-Oct-23 09:10:59 - INFO] - WinxMusic.misc - Sudoers Loaded.
+[16-Oct-23 09:10:59 - INFO] - WinxMusic.core.bot - Starting Bot
+[16-Oct-23 09:11:07 - ERROR] - WinxMusic - No Assistant Clients Vars Defined!.. Exiting Process.
+[16-Oct-23 09:11:07 - INFO] - WinxMusic - Stopping Winx Music Bot! GoodBye
+[16-Oct-23 12:26:32 - WARNING] - WinxMusic.core.mongo - No MONGO DB URL found.. Your Bot will work on Winx's Database
+[16-Oct-23 12:26:40 - INFO] - WinxMusic.core.dir - Directories Updated.
+[16-Oct-23 12:26:40 - INFO] - WinxMusic.core.git - Git Client Found [VPS DEPLOYER]
+[16-Oct-23 12:26:40 - INFO] - WinxMusic.misc - Database Initialized.
+[16-Oct-23 12:26:40 - INFO] - WinxMusic.misc - Sudoers Loaded.
+[16-Oct-23 12:26:40 - INFO] - WinxMusic.core.bot - Starting Bot
+[16-Oct-23 12:26:42 - WARNING] - WinxMusic - No Spotify Vars defined. Your bot won't be able to play spotify queries.
+[16-Oct-23 12:28:16 - ERROR] - WinxMusic.core.bot - Bot has failed to access the log Group. Make sure that you have added your bot to your log channel and promoted as admin!
+[16-Oct-23 12:30:34 - WARNING] - WinxMusic.core.mongo - No MONGO DB URL found.. Your Bot will work on Winx's Database
+[16-Oct-23 12:30:41 - INFO] - WinxMusic.core.dir - Directories Updated.
+[16-Oct-23 12:30:41 - INFO] - WinxMusic.core.git - Git Client Found [VPS DEPLOYER]
+[16-Oct-23 12:30:41 - INFO] - WinxMusic.misc - Database Initialized.
+[16-Oct-23 12:30:41 - INFO] - WinxMusic.misc - Sudoers Loaded.
+[16-Oct-23 12:30:41 - INFO] - WinxMusic.core.bot - Starting Bot
+[16-Oct-23 12:30:43 - WARNING] - WinxMusic - No Spotify Vars defined. Your bot won't be able to play spotify queries.
+[16-Oct-23 12:30:48 - INFO] - WinxMusic.core.bot - WinxBot Started as: DJ ÀREA 52
+[16-Oct-23 12:40:42 - INFO] - WinxMusic.core.dir - Directories Updated.
+[16-Oct-23 12:40:42 - INFO] - WinxMusic.core.git - Git Client Found [VPS DEPLOYER]
+[16-Oct-23 12:40:42 - INFO] - WinxMusic.misc - Database Initialized.
+[16-Oct-23 13:00:28 - INFO] - WinxMusic.core.dir - Directories Updated.
+[16-Oct-23 13:00:28 - INFO] - WinxMusic.core.git - Git Client Found [VPS DEPLOYER]
+[16-Oct-23 13:00:28 - INFO] - WinxMusic.misc - Database Initialized.
+[16-Oct-23 13:31:45 - INFO] - WinxMusic.core.dir - Directories Updated.
+[16-Oct-23 13:31:45 - INFO] - WinxMusic.core.git - Git Client Found [VPS DEPLOYER]
+[16-Oct-23 13:31:45 - INFO] - WinxMusic.misc - Database Initialized.
+[16-Oct-23 13:46:09 - INFO] - WinxMusic.core.dir - Directories Updated.
+[16-Oct-23 13:46:09 - INFO] - WinxMusic.core.git - Git Client Found [VPS DEPLOYER]
+[16-Oct-23 13:46:09 - INFO] - WinxMusic.misc - Database Initialized.
+[16-Oct-23 14:27:48 - INFO] - WinxMusic.core.dir - Directories Updated.
+[16-Oct-23 14:27:48 - INFO] - WinxMusic.core.git - Git Client Found [VPS DEPLOYER]
+[16-Oct-23 14:27:48 - INFO] - WinxMusic.misc - Database Initialized.
+[16-Oct-23 14:31:35 - INFO] - WinxMusic.core.dir - Directories Updated.
+[16-Oct-23 14:31:35 - INFO] - WinxMusic.core.git - Git Client Found [VPS DEPLOYER]
+[16-Oct-23 14:31:35 - INFO] - WinxMusic.misc - Database Initialized.
+[16-Oct-23 14:35:14 - INFO] - WinxMusic.core.dir - Directories Updated.
+[16-Oct-23 14:35:14 - INFO] - WinxMusic.core.git - Git Client Found [VPS DEPLOYER]
+[16-Oct-23 14:35:14 - INFO] - WinxMusic.misc - Database Initialized.
+[16-Oct-23 14:35:16 - INFO] - WinxMusic.misc - Sudoers Loaded.
+[16-Oct-23 14:35:16 - INFO] - WinxMusic.core.bot - Starting Bot
+[16-Oct-23 14:35:25 - INFO] - WinxMusic.core.bot - WinxBot Started as: DJ ÀREA 52
+[16-Oct-23 14:50:26 - INFO] - WinxMusic.core.dir - Directories Updated.
+[16-Oct-23 14:50:26 - INFO] - WinxMusic.core.git - Git Client Found [VPS DEPLOYER]
+[16-Oct-23 14:50:26 - INFO] - WinxMusic.misc - Database Initialized.
+[16-Oct-23 14:50:30 - INFO] - WinxMusic.misc - Sudoers Loaded.
+[16-Oct-23 14:50:30 - INFO] - WinxMusic.core.bot - Starting Bot
+[16-Oct-23 14:50:42 - INFO] - WinxMusic.core.bot - WinxBot Started as: DJ ÀREA 52
