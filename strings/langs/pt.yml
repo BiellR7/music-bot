@@ -76,7 +76,7 @@ admin_34: "Falha ao buscar o fluxo atual."
 
 # Start
 start_1: "🌟 Bem-vindo ao {0}! 🎉\n{1} está vivo e pulsando com energia! 💥\n\nSe você precisar de qualquer ajuda ou assistência, não hesite em conferir nosso grupo de suporte e canal. Estamos aqui para tornar sua experiência incrível! 🎧💜"
-start_2: "🎵 Olá, pessoal! Sou a {0}, sua DJ aqui no Telegram! 🥰\n\nCom suporte para plataformas incríveis como Youtube, Spotify, Resso, Apple Music, Soundcloud e muito mais, estou aqui para encher seus dias com batidas contagiante e melodias envolventes! 🎶🎉\n\nAdicione-me ao seu grupo e vamos começar a festa musical juntos! 🎧💜"
+start_2: "🎵 Olá, pessoal! Sou a {0}, a 🎧DJ virtual aqui do seu Telegram! \n\nEstou aqui para trazer batidas e ritmos incríveis diretamente pra você. com a minha vasta coleção de músicas, estou aqui pronta para atender os seus pedidos e mantê-los no ritmo. 🎶 peça sua música favorita e deixe-me fazer a mágica da música acintecer.🎶🎉\n\nVamos balancajuntos ao som da música com Zoe, a sua DJ pessoal!🎤💜"
 start_3: "Bem-vindo a {0}\n\nNão preciso de nenhuma **permissão de administrador** para trabalhar (até que seja solicitado).\n\nNome de usuário do assistente:- @{1}\nID do assistente:- {2} \n\nCaso a assistente não esteja no grupo, você pode adicionar manualmente usando o ID do assistente.\n\nPara obter ajuda, use /help"
 start_4: "O Proprietário de {0}[{1}] acabou de entrar no seu chat."
 start_5: "Um membro do usuário Sudo de {0}[{1}] acabou de entrar no seu chat."
@@ -226,14 +226,14 @@ song_11: "Carregamento iniciado\n\nA velocidade de carregamento pode ser lenta. 
 queue_1: "Aguarde.. Buscando fila.."
 queue_2: "Lista na fila está vazia. Nenhuma faixa encontrada"
 queue_3: "<u>**Faixas na fila:</u>** [Mais faixas]({0})"
-queue_4: "⏳ Adicionado à fila em **#{0}\n\n💡Título:** {1}\n**⏱Duração:** {2}\n👤**Adicionado por:** {3}"
+queue_4: "⏰ Adicionado à fila em **#{0}\n\n💡Título:** {1}\n**⏱Duração:** {2}\n👤**Adicionado por:** {3}"
 queue_5: "Apenas uma faixa dentro da fila, por favor adicione mais algumas à lista de verificação"
 
 # All Streaming Lines
-stream_1: "📡 **Stream iniciada** 💡🌈\n\n👤**Pedida por:** {0}\n🔦**Informações: **[Aqui]({1})"
-stream_2: "📡 **Iniciou a stream via URL** 💡🌈\n\n👤**Pedida por:** {0}"
-stream_3: "📡 **Stream iniciada** 💡🌈\n\n**🏷Título:** {0}\n⌛️**Duração**: {1}\n👤**Pedida por:** {2} "
-stream_4: "📡 **Stream iniciada** 💡🌈\n\n**🏷Título:** [{0}]({1})\n⌛️**Duração**: {2}\n👤**Pedida por:** {3}"
+stream_1: "📡 **Transmissão iniciada** 💜💫\n\n👤**Pedida por:** {0}\n🔦**Informações: **[Aqui]({1})"
+stream_2: "📡 **Iniciou a transmissão via URL** 💜💫\n\n👤**Pedida por:** {0}"
+stream_3: "📡 **Transmissão iniciada** 💜💫\n\n**🏷Título:** {0}\n⏰**Duração**: {1}\n👤**Pedida por:** {2} "
+stream_4: "📡 **Transmissão iniciada** 💜💫\n\n**🏷Título:** [{0}]({1})\n⏰**Duração**: {2}\n👤**Pedida por:** {3}"
 
 # Inline Buttons
 
