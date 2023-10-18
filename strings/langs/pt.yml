@@ -75,8 +75,8 @@ admin_34: "Falha ao buscar o fluxo atual."
 # Bot
 
 # Start
-start_1: "🌟 Bem-vindo ao {0}! 🎉\n{1} está vivo e pulsando com energia! 💥\n\nSe você precisar de qualquer ajuda ou assistência, não hesite em conferir nosso grupo de suporte e canal. Estamos aqui para tornar sua experiência excepcional! 🎵🤖"
-start_2: "🎵 Olá, pessoal! Sou o {0}, seu DJ aqui no Telegram! 🤖💃\n\nCom suporte para plataformas incríveis como Youtube, Spotify, Resso, Apple Music, Soundcloud e muito mais, estou aqui para encher seus dias com batidas contagiante e melodias envolventes! 🎶🎉\n\nAdicione-me ao seu grupo e vamos começar a festa musical juntos! 🎧💜"
+start_1: "🌟 Bem-vindo ao {0}! 🎉\n{1} está vivo e pulsando com energia! 💥\n\nSe você precisar de qualquer ajuda ou assistência, não hesite em conferir nosso grupo de suporte e canal. Estamos aqui para tornar sua experiência incrível! 🎧💜"
+start_2: "🎵 Olá, pessoal! Sou a {0}, sua DJ aqui no Telegram! 🥰\n\nCom suporte para plataformas incríveis como Youtube, Spotify, Resso, Apple Music, Soundcloud e muito mais, estou aqui para encher seus dias com batidas contagiante e melodias envolventes! 🎶🎉\n\nAdicione-me ao seu grupo e vamos começar a festa musical juntos! 🎧💜"
 start_3: "Bem-vindo a {0}\n\nNão preciso de nenhuma **permissão de administrador** para trabalhar (até que seja solicitado).\n\nNome de usuário do assistente:- @{1}\nID do assistente:- {2} \n\nCaso a assistente não esteja no grupo, você pode adicionar manualmente usando o ID do assistente.\n\nPara obter ajuda, use /help"
 start_4: "O Proprietário de {0}[{1}] acabou de entrar no seu chat."
 start_5: "Um membro do usuário Sudo de {0}[{1}] acabou de entrar no seu chat."
