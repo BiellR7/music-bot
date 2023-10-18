@@ -88,7 +88,7 @@ help_1: "Clique nos botões abaixo para obter mais informações. Se você estiv
 help_2: "Contate-me em PV para obter ajuda."
 
 # Settings
-setting_1: "⚙️ **Configurações da Winx**\n\n🖇**Grupo:** {0}\n🔖**ID do grupo:** `{1}`\n\n💡**Escolha a função nos botões abaixo que você deseja editar ou alterar.**"
+setting_1: "⚙️ **Configurações da Zoe**\n\n🖇**Grupo:** {0}\n🔖**ID do grupo:** `{1}`\n\n💡**Escolha a função nos botões abaixo que você deseja editar ou alterar.**"
 setting_3: "⁉️ O que é isso?\n\n1) Direto: reproduz consultas de pesquisa diretamente. Use -v para reproduzir vídeos no modo direto.\n\n2) Inline: retorna botões de marcação inline para escolher entre vídeo e áudio."
 setting_4: "⁉️ O que é isso?\n\n👥 Todos: Qualquer um pode usar comandos de administrador (pular, pausar, retomar etc) presentes neste grupo.\n\n🙍 Somente administrador: somente administradores e usuários autorizados podem usar comandos de administrador ."
 configuração_5: "Nenhum usuário autorizado encontrado\n\nVocê pode permitir que qualquer não administrador use meus comandos de administrador por /auth e exclua usando /unauth"
