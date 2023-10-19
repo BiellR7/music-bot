@@ -81,7 +81,7 @@ async def gen_thumb(videoid):
         para = textwrap.wrap(title, width=32)
         j = 0
         draw.text(
-            (5, 5), f"Devs: Biell & Henx", fill="white", font=name_font
+            (1200, 5), f"Devs: Biell & Henx", fill="white", font=name_font
         )
         draw.text(
             (600, 150),
@@ -95,7 +95,7 @@ async def gen_thumb(videoid):
             if j == 1:
                 j += 1
                 draw.text(
-                    (1300, 340),
+                    (600, 340),
                     f"{line}",
                     fill="white",
                     stroke_width=1,
