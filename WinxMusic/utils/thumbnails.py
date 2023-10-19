@@ -84,7 +84,7 @@ async def gen_thumb(videoid):
             (5, 5), f"Devs: Biell & Henx", fill="white", font=name_font
         )
         draw.text(
-            (1200, 150),
+            (600, 150),
             "NOW PLAYING",
             fill="white",
             stroke_width=2,
@@ -95,7 +95,7 @@ async def gen_thumb(videoid):
             if j == 1:
                 j += 1
                 draw.text(
-                    (600, 340),
+                    (1300, 340),
                     f"{line}",
                     fill="white",
                     stroke_width=1,
