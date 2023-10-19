@@ -72,7 +72,7 @@ async def gen_thumb(videoid):
         logo = youtube.crop((x1, y1, x2, y2))
         logo.thumbnail((520, 520), Image.ANTIALIAS)
         logo = ImageOps.expand(logo, border=15, fill="white")
-        background.paste(logo, (image1.width - logo.width - 50, 100))
+        background.paste(logo, (image1.width - logo.width , 100))
         draw = ImageDraw.Draw(background)
         font = ImageFont.truetype("assets/RobotoBold.ttf", 40, encoding="utf-8")
         font2 = ImageFont.truetype("assets/RobotoBold.ttf", 70, encoding="utf-8")
