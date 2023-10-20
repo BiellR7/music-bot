@@ -81,7 +81,7 @@ async def gen_thumb(videoid):
         para = textwrap.wrap(title, width=32)
         j = 0
         draw.text(
-            (490, 5), f"Devs> Biell & Henx", fill="white", font=name_font
+            (480, 5), f"Devs> Biell & Henx", fill="white", font=name_font
         ) 
         draw.text(
             (600, 150),
