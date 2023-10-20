@@ -1,29 +1,29 @@
 name: 🇧🇷 Portuguese
 
 # General Strings
-general_1: "Por favor, responda à mensagem de um usuário ou passe um username/user_id.🙏"
-general_2: "Ops! 😅 Comando Inválido."
-general_3: "Oh não! 😞 Um **erro ocorreu** ao processar seu pedido. Desculpe 😔\n\nErro: {0}"
-general_4: "Você é um administrador anônimo no grupo.🕵️‍♂️\nUse sua conta de usuário para usar os comandos."
-general_5: "Você precisa ser administrador com permissões de gerenciamento de chat de voz.🎙️"
-general_6: "O bot não está transmitindo nada no momento.📡"
+general_1: "Por favor, responda à mensagem de um usuário ou coloque um username/user_id. 🫡"
+general_2: "Comando está inválido, não foi dessa vez🫨"
+general_3: "Um **erro ocorreu** ao processar seu pedido.\n\nErro: {0}"
+general_4: "Você é um administrador anônimo no grupo.🫥\nUse sua conta de usuário para usar os comandos."
+general_5: "Você precisa ser administrador com permissões de gerenciamento de chat de voz. 🎤"
+general_6: "O bot não está reproduzindo nada no momento!!"
 
 # Classes - Telegram.py
-tg_1: "O bot está **sobrecarregado** com downloads no momento.😓\n\n**Tente depois:** {0} (__expected time__)"
-tg_2: "Falha ao baixar o arquivo do telegram.😢"
+tg_1: "O bot está **sobrecarregado** com downloads no momento.\n\n**Tente depois:** {0} (__expected time__)"
+tg_2: "Não consegui fazer download do arquivo."
 
 
 # Core - Call.py
-call_1: "O bot requer permissão de **Admin** para convidar uma conta de assistente para seu canal ou grupo."
-call_2: "O assistente foi banido em seu grupo ou canal, por favor, desbana.\n\n**Username do assistente:** @{0}\n**Assistant ID:** {1}"
+call_1: "O bot requer permissão de **Administrador** para convidar uma conta de assistente para seu canal/grupo."
+call_2: "O assistente está banido em seu grupo/canal, por favor, desbana.\n\n**Username do assistente:** @{0}\n**ID do Assistente:** {1}"
 call_3: "Ocorreu um erro ao convidar uma conta de assistente para seu grupo.\n\n**Motivo**: {0}"
 call_4: "O bot requer permissão **Convidar usuários via link** para convidar a conta de assistente para seu grupo."
-call_5: "A Conta Assistente será adicionada em 5 segundos. Aguarde!"
-call_6: "Conta do Assistente[{0}] Entrou com sucesso.\n\nComeçando a música agora"
+call_5: "A Conta Assistente está sendoo adicionada em 5 segundos. Aguarde!"
+call_6: "A Conta do Assistente[{0}] Entrou com sucesso.\n\nEstarei começando a reprodução de música/video"
 call_7: "**Direito de administrador prejudicial dado **\n\nPor favor remova a permissão **BANIR USUÁRIOS** do bot."
 call_8: "**Direito de administrador prejudicial dado **\n\nPor favor remova a permissão **ADICIONAR NOVOS ADMINS** do bot."
 call_9: "**Falha ao mudar de stream**\nPor favor use o comando /skip para avançar."
-call_10: "Baixando a próxima faixa da Playlist 🎵🌈"
+call_10: "Baixando a próxima faixa da playlist...🎵"
 call_11: "Adicione @{0} ao seu canal[ ID: {1}].\n\nO bot não consegue obter detalhes do canal."
 
 # PLUGINS - Auth.py
@@ -37,16 +37,16 @@ auth_7: "**Lista de usuários autorizados[AUL]:**\n\n"
 auth_8: "┗ Adicionado por:-"
 
 # PLUGINS - Admins
-admin_1: "A música já está pausada."
-admin_2: "🎧 Chat de video pausado por {}!"
-admin_3: "A música já foi retomada."
-admin_4: "🎧 Chat de video retomado por {}!"
-admin_5: "A música já está silenciada."
-admin_6: "🎧 Chat de voz silenciado por {}!"
-admin_7: "Música já está sem som."
-admin_8: "🎧 Chat de voz ativado por {}!"
-admin_9: "🎧 Chat de video finalizado por {}!"
-admin_10: "🎧 Chat de voz ignorado por {}!. Não há mais música na fila."
+admin_1: "🪩 A Transmissão já está pausada."
+admin_2: "🪩 A Transmissão foi pausada por {}!"
+admin_3: "🕺🏻 A Transmissão já foi retomada."
+admin_4: "🕺🏻 A Transmissão foi retomada por {}!"
+admin_5: "🕺🏻 A Transmissão já está silenciada."
+admin_6: "😐 O Chat de voz silenciado por {}!"
+admin_7: "🔇 A Música já está sem som."
+admin_8: "🪄 Call de voz ativado por {}!"
+admin_9: "🪄 Call de video finalizado por {}!"
+admin_10: "🪄 Transmissao de voz/video ignorado por {}!. Não há mais música/video na fila."
 admin_11: "Erro ao alterar o fluxo para **{0}**\n\nPor favor, use /skip novamente."
 admin_12: "Não foi possível pular para uma faixa específica devido à reprodução em loop ativada. Por favor, desative a reprodução em loop via `/loop disable` para usar este recurso."
 admin_13: "Por favor, use números numéricos para faixas específicas, como 1, 2 ou 4 etc"
@@ -72,10 +72,8 @@ admin_32: "Aguarde... Buscando fluxo contínuo."
 admin_33: "Stream procurado com sucesso para {0} minutos"
 admin_34: "Falha ao buscar o fluxo atual."
 
-# Bot
-
 # Start
-start_1: "HENX🌟 Bem-vindo ao {0}! 🎉\n{1} está vivo e pulsando com energia! 💥\n\nSe você precisar de qualquer ajuda ou assistência, não hesite em conferir nosso grupo de suporte e canal. Estamos aqui para tornar sua experiência incrível! 🎧💜"
+start_1: "Seja Bem-vindo ao {0}! 🪬\n{1} está online e funcionando corretamente!\n\n"
 start_2: "🎵 Olá, pessoal! Sou a {0}, a 🎧DJ virtual aqui do seu Telegram! \n\nEstou aqui para trazer batidas e ritmos incríveis diretamente pra você. com a minha vasta coleção de músicas, estou aqui pronta para atender os seus pedidos e mantê-los no ritmo. 🎶 peça sua música favorita e deixe-me fazer a mágica da música acintecer.🎶🎉\n\nVamos balancar juntos ao som da música com Zoe, a sua DJ pessoal!🎤💜"
 start_3: "Bem-vindo a {0}\n\nNão preciso de nenhuma **permissão de administrador** para trabalhar (até que seja solicitado).\n\nNome de usuário do assistente:- @{1}\nID do assistente:- {2} \n\nCaso a assistente não esteja no grupo, você pode adicionar manualmente usando o ID do assistente.\n\nPara obter ajuda, use /help"
 start_4: "O Proprietário de {0}[{1}] acabou de entrar no seu chat."
@@ -235,8 +233,6 @@ stream_2: "📡 **Iniciou a transmissão via URL** 💜💫\n\n👤**Pedida por:
 stream_3: "📡 **Transmissão iniciada** 💜💫\n\n**🏷Título:** {0}\n⏰**Duração**: {1}\n👤**Pedida por:** {2} "
 stream_4: "📡 **Transmissão iniciada** 💜💫\n\n**🏷Título:** [{0}]({1})\n⏰**Duração**: {2}\n👤**Pedida por:** {3}"
 
-# Inline Buttons
-
 #General Buttons
 CLOSE_BUTTON: "🗑 Fechar"
 CLOSEMENU_BUTTON: "🗑 Fechar"
@@ -244,7 +240,7 @@ BACK_BUTTON: "⬅ Voltar"
 UNBAN_BUTTON: "🗑 Assistente de desbanimento"
 
 #Lyrics
-L_B_1: "🚀 Confira as Letras Agora"
+L_B_1: "🔠 Confira as Letras Agora"
 
 # Start
 S_B_1: "🗒 Comandos"
@@ -271,15 +267,15 @@ PM_B_3: "Canal Play"
 
 #Play
 P_B_1: "🎵 Play Áudio"
-P_B_2: "🎥 Play Vídeo"
-P_B_3: "🏮 Play live"
-P_B_4: "🎵 Playlist"
+P_B_2: "📹 Play Vídeo"
+P_B_3: "🟥 Play Live"
+P_B_4: "📄 Playlist"
 
 #Playlist
-PL_B_1: "🚀 Playlist"
+PL_B_1: "📄 Playlist"
 PL_B_2: "✚ Playlist"
-PL_B_3: "✚ CPanel"
-PL_B_4: "📡 Modo Play"
+PL_B_3: "✚ Controle"
+PL_B_4: "🎬 Modo Play"
 PL_B_5: "🔄 Toda a playlist"
 PL_B_6: "↗️ Excluir playlist"
 PL_B_7: "❗️ Sim, tenho certeza. Apague"
