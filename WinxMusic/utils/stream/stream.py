@@ -1,4 +1,3 @@
-
 import os
 from random import randint
 from typing import Union
@@ -57,71 +56,148 @@ async def stream(
                 ) = await YouTube.details(
                     search, False if spotify else True
                 )
-                if str(duration_min) == "None":
-                    continue
-                if duration_sec > config.DURATION_LIMIT:
-                    continue
-                if await is_active_chat(chat_id):
-                    await put_queue(
-                        chat_id,
-                        original_chat_id,
-                        f"vid_{vidid}",
-                        title,
-                        duration_min,
-                        user_name,
-                        vidid,
-                        user_id,
-                        "video" if video else "audio",
-                    )
-                    position = len(db.get(chat_id)) - 1
-                    count += 1
-                    msg += f"{count}- {title[:70]}\n"
-                    msg += f"{_['playlist_17']} {position}\n\n"
-                else:
-                    if not forceplay:
-                        db[chat_id] = []
-                    status = True if video else None
-                    try:
-                        file_path, direct = await YouTube.download(
-                            vidid, mystic, video=status, videoid=True
-                        )
-                    except:
-                        raise AssistantErr(_["play_16"])
-                    await Winx.join_call(
-                        chat_id, original_chat_id, file_path, video=status
-                    )
-                    await put_queue(
-                        chat_id,
-                        original_chat_id,
-                        file_path if direct else f"vid_{vidid}",
-                        title,
-                        duration_min,
-                        user_name,
-                        vidid,
-                        user_id,
-                        "video" if video else "audio",
-                        forceplay=forceplay,
-                    )
-                    img = await gen_thumb(vidid)
-                    button = stream_markup(_, vidid, chat_id)
-                    run = await app.send_photo(
-                        original_chat_id,
-                        photo=img,
-                        caption=_["stream_1"].format(
-                            user_name,
-                            f"https://t.me/{app.username}?start=info_{vidid}",
-                        ),
-                        reply_markup=InlineKeyboardMarkup(button),
-                    )
-                    db[chat_id][0]["mystic"] = run
-                    db[chat_id][0]["markup"] = "stream"
             except:
-                # Defina um valor padrão para 'title' caso ocorra uma exceção
-                title = "Título Indisponível"
-    # Resto do código...
-
-
-     elif streamtype == "soundcloud":
+                continue
+            if str(duration_min) == "None":
+                continue
+            if duration_sec > config.DURATION_LIMIT:
+                continue
+            if await is_active_chat(chat_id):
+                await put_queue(
+                    chat_id,
+                    original_chat_id,
+                    f"vid_{vidid}",
+                    title,
+                    duration_min,
+                    user_name,
+                    vidid,
+                    user_id,
+                    "video" if video else "audio",
+                )
+                position = len(db.get(chat_id)) - 1
+                count += 1
+                msg += f"{count}- {title[:70]}\n"
+                msg += f"{_['playlist_17']} {position}\n\n"
+            else:
+                if not forceplay:
+                    db[chat_id] = []
+                status = True if video else None
+                try:
+                    file_path, direct = await YouTube.download(
+                        vidid, mystic, video=status, videoid=True
+                    )
+                except:
+                    raise AssistantErr(_["play_16"])
+                await Winx.join_call(
+                    chat_id, original_chat_id, file_path, video=status
+                )
+                await put_queue(
+                    chat_id,
+                    original_chat_id,
+                    file_path if direct else f"vid_{vidid}",
+                    title,
+                    duration_min,
+                    user_name,
+                    vidid,
+                    user_id,
+                    "video" if video else "audio",
+                    forceplay=forceplay,
+                )
+                img = await gen_thumb(vidid)
+                button = stream_markup(_, vidid, chat_id)
+                run = await app.send_photo(
+                    original_chat_id,
+                    photo=img,
+                    caption=_["stream_1"].format(
+                        user_name,
+                        f"https://t.me/{app.username}?start=info_{vidid}",
+                    ),
+                    reply_markup=InlineKeyboardMarkup(button),
+                )
+                db[chat_id][0]["mystic"] = run
+                db[chat_id][0]["markup"] = "stream"
+        if count == 0:
+            return
+        else:
+            link = await Winxbin(msg)
+            lines = msg.count("\n")
+            if lines >= 17:
+                car = os.linesep.join(msg.split(os.linesep)[:17])
+            else:
+                car = msg
+            carbon = await Carbon.generate(
+                car, randint(100, 10000000)
+            )
+            upl = close_markup(_)
+            return await app.send_photo(
+                original_chat_id,
+                photo=carbon,
+                caption=_["playlist_18"].format(link, position),
+                reply_markup=upl,
+            )
+    elif streamtype == "youtube":
+        link = result["link"]
+        vidid = result["vidid"]
+        title = (result["title"]).title()
+        duration_min = result["duration_min"]
+        status = True if video else None
+        try:
+            file_path, direct = await YouTube.download(
+                vidid, mystic, videoid=True, video=status
+            )
+        except:
+            raise AssistantErr(_["play_16"])
+        if await is_active_chat(chat_id):
+            await put_queue(
+                chat_id,
+                original_chat_id,
+                file_path if direct else f"vid_{vidid}",
+                title,
+                duration_min,
+                user_name,
+                vidid,
+                user_id,
+                "video" if video else "audio",
+            )
+            position = len(db.get(chat_id)) - 1
+            await app.send_message(
+                original_chat_id,
+                _["queue_4"].format(
+                    position, title[:30], duration_min, user_name
+                ),
+            )
+        else:
+            if not forceplay:
+                db[chat_id] = []
+            await Winx.join_call(
+                chat_id, original_chat_id, file_path, video=status
+            )
+            await put_queue(
+                chat_id,
+                original_chat_id,
+                file_path if direct else f"vid_{vidid}",
+                title,
+                duration_min,
+                user_name,
+                vidid,
+                user_id,
+                "video" if video else "audio",
+                forceplay=forceplay,
+            )
+            img = await gen_thumb(vidid)
+            button = stream_markup(_, vidid, chat_id)
+            run = await app.send_photo(
+                original_chat_id,
+                photo=img,
+                caption=_["stream_1"].format(
+                    user_name,
+                    f"https://t.me/{app.username}?start=info_{vidid}",
+                ),
+                reply_markup=InlineKeyboardMarkup(button),
+            )
+            db[chat_id][0]["mystic"] = run
+            db[chat_id][0]["markup"] = "stream"
+    elif streamtype == "soundcloud":
         file_path = result["filepath"]
         title = result["title"]
         duration_min = result["duration_min"]
