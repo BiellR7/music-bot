@@ -135,6 +135,7 @@ async def stream(
                 caption=_["playlist_18"].format(link, position),
                 reply_markup=upl,
             )
+        title = ""
     elif streamtype == "youtube":
         link = result["link"]
         vidid = result["vidid"]
