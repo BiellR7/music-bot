@@ -1,30 +1,142 @@
-from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
+import os
+import re
+import textwrap
 
-# ... (seu código anterior) ...
+import aiofiles
+import aiohttp
+from PIL import (Image, ImageDraw, ImageEnhance, ImageFilter,
+                 ImageFont, ImageOps)
+from youtubesearchpython.__future__ import VideosSearch
 
-# Texto a ser adicionado com fundo transparente e borda preta
-text = "Devs: Biell & Henx"
+from config import YOUTUBE_IMG_URL
 
-# Crie uma imagem com o texto
-mask = Image.new("L", (500, 100), 0)
-draw = ImageDraw.Draw(mask)
-font = ImageFont.truetype("assets/RobotoBold.ttf", 40, encoding="utf-8")
 
-# Desenhe o texto no fundo preto
-draw.text((10, 10), text, 255, font=font)
+def changeImageSize(maxWidth, maxHeight, image):
+    widthRatio = maxWidth / image.size[0]
+    heightRatio = maxHeight / image.size[1]
+    newWidth = int(widthRatio * image.size[0])
+    newHeight = int(heightRatio * image.size[1])
+    newImage = image.resize((newWidth, newHeight))
+    return newImage
 
-# Crie uma imagem RGB com fundo transparente
-text_image = Image.new("RGBA", (500, 100))
-draw = ImageDraw.Draw(text_image)
 
-# Cole a máscara na imagem com um fundo transparente
-text_image.paste((0, 0, 0, 255), (0, 0, 500, 100), mask)
+async def gen_thumb(videoid):
+    if os.path.isfile(f"cache/{videoid}.png"):
+        return f"cache/{videoid}.png"
 
-# Defina a posição do texto na imagem de fundo
-text_x = 530
-text_y = 5
+    url = f"https://www.youtube.com/watch?v={videoid}"
+    try:
+        results = VideosSearch(url, limit=1, language="en", region="US")
+        for result in (await results.next())["result"]:
+            try:
+                title = result["title"]
+                title = re.sub("\W+", " ", title)
+                title = title.title()
+            except:
+                title = "Unsupported Title"
+            try:
+                duration = result["duration"]
+            except:
+                duration = "Unknown Mins"
+            thumbnail = result["thumbnails"][0]["url"].split("?")[0]
+            try:
+                views = result["viewCount"]["short"]
+            except:
+                views = "Unknown Views"
+            try:
+                channel = result["channel"]["name"]
+            except:
+                channel = "Unknown Channel"
 
-# Cole a imagem do texto na imagem de fundo com um fundo transparente
-background.paste(text_image, (text_x, text_y), text_image)
+        async with aiohttp.ClientSession() as session:
+            async with session.get(thumbnail) as resp:
+                if resp.status == 200:
+                    f = await aiofiles.open(
+                        f"cache/thumb{videoid}.png", mode="wb"
+                    )
+                    await f.write(await resp.read())
+                    await f.close()
 
-# ... (continuação do seu código) ...
+        youtube = Image.open(f"cache/thumb{videoid}.png")
+        image1 = changeImageSize(1280, 720, youtube)
+        image2 = image1.convert("RGBA")
+        background = image2.filter(filter=ImageFilter.BoxBlur(30))
+        enhancer = ImageEnhance.Brightness(background)
+        background = enhancer.enhance(0.6)
+        Xcenter = youtube.width / 2
+        Ycenter = youtube.height / 2
+        x1 = Xcenter - 250
+        y1 = Ycenter - 250
+        x2 = Xcenter + 250
+        y2 = Ycenter + 250
+        logo = youtube.crop((x1, y1, x2, y2))
+        logo.thumbnail((520, 520), Image.ANTIALIAS)
+        logo = ImageOps.expand(logo, border=15, fill="white")
+        background.paste(logo, (50, 100))
+        draw = ImageDraw.Draw(background)
+        font = ImageFont.truetype("assets/RobotoBold.ttf", 40, encoding="utf-8")
+        font2 = ImageFont.truetype("assets/RobotoBold.ttf", 70, encoding="utf-8")
+        arial = ImageFont.truetype("assets/RobotoBold.ttf", 30, encoding="utf-8")
+        name_font = ImageFont.truetype("assets/RobotoRegular.ttf", 60, encoding="utf-8")
+        para = textwrap.wrap(title, width=32)
+        j = 0
+        draw.text(
+            (559, 5), f"Devs: Biell & Henx", fill="transparent, font=font2
+        )
+        draw.text(
+            (600, 150),
+            "NOW PLAYING",
+            fill="white",
+            stroke_width=2,
+            stroke_fill="white",
+            font=font2,
+        )
+        for line in para:
+            if j == 1:
+                j += 1
+                draw.text(
+                    (600, 340),
+                    f"{line}",
+                    fill="white",
+                    stroke_width=1,
+                    stroke_fill="white",
+                    font=font,
+                )
+            if j == 0:
+                j += 1
+                draw.text(
+                    (600, 280),
+                    f"{line}",
+                    fill="white",
+                    stroke_width=1,
+                    stroke_fill="white",
+                    font=font,
+                )
+
+        draw.text(
+            (600, 450),
+            f"Views : {views[:23]}",
+            (255, 255, 255),
+            font=arial,
+        )
+        draw.text(
+            (600, 500),
+            f"Duration : {duration[:23]} Mins",
+            (255, 255, 255),
+            font=arial,
+        )
+        draw.text(
+            (600, 550),
+            f"Channel : {channel}",
+            (255, 255, 255),
+            font=arial,
+        )
+        try:
+            os.remove(f"cache/thumb{videoid}.png")
+        except:
+            pass
+        background.save(f"cache/{videoid}.png")
+        return f"cache/{videoid}.png"
+    except Exception as e:
+        print(e)
+        return YOUTUBE_IMG_URL
