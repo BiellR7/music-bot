@@ -47,7 +47,6 @@ class WinxBot(Client):
                         BotCommand("shuffle", "Embaralha a fila de músicas"),
                         BotCommand("playmode", "Alterna entre os modos de reprodução"),
                         BotCommand("settings", "Abre o menu de configurações"),
-                        BotCommand("wifu", "Envia uma imagem aleatória de anime"),
                         
                             ]
                 )
@@ -65,4 +64,4 @@ class WinxBot(Client):
             self.name = get_me.first_name + " " + get_me.last_name
         else:
             self.name = get_me.first_name
-        LOGGER(__name__).info(f"WinxBot Started as: {self.name}")
+        LOGGER(__name__).info(f"Zoe foi iniciada: {self.name}")
