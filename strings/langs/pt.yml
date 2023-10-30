@@ -141,7 +141,7 @@ cplay_5: "Somente Canais são suportados."
 cplay_6: "Você precisa ser o **Proprietário** do canal[{0}] para conectá-lo a este grupo.\n**Proprietário do canal:** @{1}\n\nAlternativamente, você pode vincular seu grupo para esse canal e tente conectar com `/channelplay linked`"
 
 #Play
-play_1: "🔄 Processando seu pedido... Aguarde!"
+play_1: "⏳ Processando sua solicitação... Aguarde!"
 play_2: "**🏷Modo de reprodução do canal**\n\n🔄 Processando consulta... Aguarde!\n**Canal vinculado:** {0}"
 play_3: "Falha ao processar a consulta!"
 play_4: "🖇 **Admins Only Play**\nSomente Admins e Auth Users podem tocar música neste grupo.\n\nAltere o modo via /playmode e se você já for admin, recarregue o admincache via /admincache"
@@ -224,14 +224,14 @@ song_11: "Carregamento iniciado\n\nA velocidade de carregamento pode ser lenta. 
 queue_1: "Aguarde.. Buscando fila.."
 queue_2: "Lista na fila está vazia. Nenhuma faixa encontrada"
 queue_3: "<u>**Faixas na fila:</u>** [Mais faixas]({0})"
-queue_4: "⏰ Adicionado à fila em **#{0}\n\n💡Título:** {1}\n**⏱Duração:** {2}\n👤**Adicionado por:** {3}"
+queue_4: "⏰ ADICIONADO A FILA EM**#{0}\n\n🏷️ TÍTULO:** {1}\n**⏰ DURAÇÃO:** {2}\n👤**SOLICITADO POR:** {3}"
 queue_5: "Apenas uma faixa dentro da fila, por favor adicione mais algumas à lista de verificação"
 
 # All Streaming Lines
-stream_1: "📡 **Transmissão iniciada** 💜💫\n\n👤**Pedida por:** {0}\n🔦**Informações: **[Aqui]({1})"
-stream_2: "📡 **Iniciou a transmissão via URL** 💜💫\n\n👤**Pedida por:** {0}"
-stream_3: "📡 **Transmissão iniciada** 💜💫\n\n**🏷Título:** {0}\n⏰**Duração**: {1}\n👤**Pedida por:** {2} "
-stream_4: "📡 **Transmissão iniciada** 💜💫\n\n**🏷Título:** [{0}]({1})\n⏰**Duração**: {2}\n👤**Pedida por:** {3}"
+stream_1: "📡 **Transmissão iniciada** 🕺\n\n👤**Pedida por:** {0}\n🔦**Informações: **[Aqui]({1})"
+stream_2: "📡 **Iniciou a transmissão via URL** 🕺\n\n👤**Solicitadoa por:** {0}"
+stream_3: "📡 **Transmissão iniciada** 🕺\n\n**🏷Título:** {0}\n⏰**Duração**: {1}\n👤**Pedida por:** {2} "
+stream_4: "📡 **Transmissão iniciada** 🕺\n\n**🏷Título:** [{0}]({1})\n⏰**Duração**: {2}\n👤**Pedida por:** {3}"
 
 #General Buttons
 CLOSE_BUTTON: "🗑 Fechar"
@@ -243,13 +243,13 @@ UNBAN_BUTTON: "🗑 Assistente de desbanimento"
 L_B_1: "🔠 Confira as Letras Agora"
 
 # Start
-S_B_1: "🗒 Comandos"
-S_B_2: "🔧 Configurações"
-S_B_3: "📨 Suporte"
-S_B_4: "📨 Canal"
+S_B_1: "🗒 COMANDOS"
+S_B_2: "🔧 CONFIGURAÇÕES"
+S_B_3: "📨 SUPORTE"
+S_B_4: "📨 CANAL"
 S_B_5: "✚ Adicione ao seu grupo"
-S_B_6: "💡 Git Repo"
-S_B_7: "👤 Dono do bot"
+S_B_6: "💡 NADA AQUI"
+S_B_7: "👤 DESENVOLVEDOR"
 S_B_8: "🔎 Como Usar? Menu de Comandos."
 
 #Help
