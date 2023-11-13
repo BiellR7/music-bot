@@ -93,7 +93,7 @@ confirmer = {}
 # Images
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.pinterest.com%2Fpin%2F885872189184485057%2F&psig=AOvVaw2mgCE5LB-d45nglDBdTcZ4&ust=1699944747275000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIDYtumxwIIDFQAAAAAdAAAAABAE.gifv,
+    "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.pinterest.com%2Fpin%2F885872189184485057%2F&psig=AOvVaw2mgCE5LB-d45nglDBdTcZ4&ust=1699944747275000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIDYtumxwIIDFQAAAAAdAAAAABAE.gifv",
 )
 
 PING_IMG_URL = getenv(
