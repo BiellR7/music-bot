@@ -75,7 +75,7 @@ async def get_thumb(videoid):
         logo = ImageFont.truetype("WinxMusic/assets/font.ttf", 70)
         draw.text(
             (10, 5),
-            unidecode(f"@cinewinx"),
+            unidecode(f"@amizadesArea52ofc"),
             fill="white",
             font=logo,
             align="center",
